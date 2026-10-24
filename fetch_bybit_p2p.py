@@ -12,7 +12,7 @@ HEADERS = {
     "Referer": "https://www.bybit.com/",
 }
 PAGE_SIZE = 20
-TARGET = 100
+TARGET = 300
 # Bybit's side flag: "1" = ads you BUY USDT from, "0" = ads you SELL USDT to.
 # Verify on first run: "buy" prices should be the lowest, "sell" the highest.
 SIDES = {"buy": "1", "sell": "0"}
