@@ -75,7 +75,7 @@ def main():
         rows += fetch_side(name, code, ts)
 
     os.makedirs("data", exist_ok=True)
-    path = f"data/bybit_usdt_ngn_{now:%Y-%m}.csv"
+    path = f"data/bybit_usdt_ngn_{now:%Y-%m-%d}.csv"
     new_file = not os.path.exists(path)
     with open(path, "a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
